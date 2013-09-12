@@ -77,7 +77,7 @@ vg.scene.build = (function() {
       // update scales
       if (group.scales) for (name in group.scales) {
         if (name.indexOf(":prev") < 0) {
-          group.scales[name+":prev"] = group.scales[name].copy();
+          group.scales[name+":prev"] = group.scales[name];
         }
       }
 
